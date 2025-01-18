@@ -70,6 +70,10 @@ def get_next_index():
 def training_coal_data():
     coal_data = load_coal_data()  
     return jsonify(coal_data)
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 
     
 @app.route('/submit_training_data', methods=['POST'])
