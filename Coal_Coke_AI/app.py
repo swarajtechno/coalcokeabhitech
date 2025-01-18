@@ -74,7 +74,8 @@ def training_coal_data():
 def index():
     return render_template('index.html')
 
-
+if __name__ == '__main__':
+    app.run(debug=True)
     
 @app.route('/submit_training_data', methods=['POST'])
 def submit_training_data():
