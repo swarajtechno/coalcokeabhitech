@@ -145,6 +145,10 @@ def get_coal_types():
         "coal_types": coal_types,
         "coal_properties": coal_properties
     })
+
+@app.route('/index.html')
+def index_html():
+    return render_template('index.html')
     
 @app.route('/get_proposed_coal_types', methods=['GET'])
 def get_proposed_coal_types():
