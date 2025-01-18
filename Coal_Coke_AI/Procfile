@@ -1,1 +1,1 @@
- web: gunicorn app:coal-coke-abhitech
+ web: gunicorn app:app
