@@ -72,7 +72,7 @@ def training_coal_data():
     return jsonify(coal_data)
 @app.route('/')
 def index():
-    return 'Hello, World!'
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
