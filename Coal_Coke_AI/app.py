@@ -82,23 +82,23 @@ if __name__ == '__main__':
     
     
 @app.route('/coal_properties.html')
-def index():
+def coal_properties():
     return render_template('coal_properties.html')
 
 @app.route('/coalai.html')
-def index():
+def coalai():
     return render_template('coalai.html')
 
 @app.route('/cost.html')
-def index():
+def cost_html():
     return render_template('cost.html')
 
 @app.route('/min-max.html')
-def index():
+def min_max_html():
     return render_template('min-max.html')  
 
 @app.route('/trainingpage.html')
-def index():
+def trainigpage_html():
     return render_template('trainingpage.html') 
 
 @app.route('/submit_training_data', methods=['POST'])
