@@ -440,7 +440,7 @@
         
         document.addEventListener("DOMContentLoaded", () => {
             // Fetch coal data from Flask when the page is loaded
-            fetch('http://127.0.0.1:5000/training_coal_data')
+            fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/training_coal_data')
                 .then(response => response.json())
                 .then(coalData => {
                     const coalDropdowns = document.querySelectorAll('.coalDropdown');
