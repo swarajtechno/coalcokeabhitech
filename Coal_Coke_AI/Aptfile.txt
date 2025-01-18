@@ -1,3 +1,3 @@
-gunicorn
-greenlet
-scipy 
+libopenblas-dev
+liblapack-dev
+libffi-dev
