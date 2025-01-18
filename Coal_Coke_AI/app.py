@@ -77,6 +77,26 @@ def index():
 if __name__ == '__main__':
     app.run(debug=True)
     
+    
+@app.route('/coal_properties.html')
+def coal_properties():
+    return render_template('coal_properties.html')
+
+@app.route('/coalai.html')
+def coalai():
+    return render_template('coalai.html')
+
+@app.route('/cost.html')
+def cost():
+    return render_template('cost.html')
+
+@app.route('/min-max.html')
+def minmax():
+    return render_template('min-max.html')  
+
+@app.route('/trainingpage.html')
+def trainingpage():
+    return render_template('trainingpage.html') 
 @app.route('/submit_training_data', methods=['POST'])
 def submit_training_data():
     # Get form data
