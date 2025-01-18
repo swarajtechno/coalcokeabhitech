@@ -70,6 +70,9 @@ def get_next_index():
 def training_coal_data():
     coal_data = load_coal_data()  
     return jsonify(coal_data)
+
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -79,24 +82,25 @@ if __name__ == '__main__':
     
     
 @app.route('/coal_properties.html')
-def coal_properties():
+def index():
     return render_template('coal_properties.html')
 
 @app.route('/coalai.html')
-def coalai():
+def index():
     return render_template('coalai.html')
 
 @app.route('/cost.html')
-def costhtml():
+def index():
     return render_template('cost.html')
 
 @app.route('/min-max.html')
-def minmax():
+def index():
     return render_template('min-max.html')  
 
 @app.route('/trainingpage.html')
-def trainingpage():
+def index():
     return render_template('trainingpage.html') 
+
 @app.route('/submit_training_data', methods=['POST'])
 def submit_training_data():
     # Get form data
