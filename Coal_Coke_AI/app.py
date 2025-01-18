@@ -87,7 +87,7 @@ def coalai():
     return render_template('coalai.html')
 
 @app.route('/cost.html')
-def cost():
+def cost2():
     return render_template('cost.html')
 
 @app.route('/min-max.html')
