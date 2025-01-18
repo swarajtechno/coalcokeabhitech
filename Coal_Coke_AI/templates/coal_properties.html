@@ -288,7 +288,7 @@
     let coalTypes = []; 
 
     function fetchCoalData() {
-    fetch('http://127.0.0.1:5000/get_coal_properties_data')
+    fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/get_coal_properties_data')
         .then(response => response.json())
         .then(data => {
         coalData = data.coal_data;
@@ -396,7 +396,7 @@
   ];
 
   // Send modified data to the server
-  fetch('http://127.0.0.1:5000/modify_coal_properties', {
+  fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/modify_coal_properties', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -469,7 +469,7 @@
     
       
         console.log("Form Data Collected:", newCoal);
-        fetch('http://127.0.0.1:5000/add_coal_properties', {
+        fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/add_coal_properties', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

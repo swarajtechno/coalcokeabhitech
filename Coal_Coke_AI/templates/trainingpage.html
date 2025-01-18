@@ -361,7 +361,7 @@
 
         document.getElementById('download-template-btn').addEventListener('click', () => {
             // Trigger the file download
-            window.location.href = 'http://127.0.0.1:5000/download-template';
+            window.location.href = 'https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/download-template';
         });
 
         function updateProcessParameters() {
@@ -537,7 +537,7 @@
                 coalContainer.appendChild(newRow);
         
                 // Fetch and populate dropdown options in the new row
-                fetch('http://127.0.0.1:5000/training_coal_data')
+                fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/training_coal_data')
                     .then(response => response.json())
                     .then(coalData => {
                         const dropdown = newRow.querySelector('.coalDropdown');
@@ -575,7 +575,7 @@
                 };
                 
         
-                fetch('http://127.0.0.1:5000/submit_training_data', {
+                fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/submit_training_data', {
                     method: 'POST',
                     body:  JSON.stringify(formattedData),
                     headers: {

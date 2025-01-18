@@ -323,7 +323,7 @@
                 data[key] = value;
             });
 
-            fetch('http://127.0.0.1:5000/minmax', {
+            fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/minmax', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -341,7 +341,7 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             // Fetch data from the server
-            fetch('http://127.0.0.1:5000/minmax_get_data')
+            fetch('https://coal-coke-abhitech-1e3a4b1b114a.herokuapp.com/minmax_get_data')
                 .then(response => response.json())
                 .then(data => {
                     // Populate form fields with the fetched data
